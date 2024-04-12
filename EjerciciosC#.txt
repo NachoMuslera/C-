@@ -1,0 +1,66 @@
+//Ejercicio1
+using System;
+public class Programa 
+    {
+    public void Main() 
+        {
+        int intValue = 10;
+        short shortValue = 20;
+        byte byteValue = 30;
+        long longValue = 922337203685477580;
+        float floatValue = 13.5f;
+        double doubleValue = 3.141624;
+        decimal decimalValue = 123456.789m;
+        char charValue = 'L';
+        bool boolValue = true;
+        
+        Console.WriteLine("int: " + intValue);
+        Console.WriteLine("short: " + shortValue);
+        Console.WriteLine("byte: " + byteValue);
+        Console.WriteLine("long: " + longValue);
+        Console.WriteLine("float: " + floatValue);
+        Console.WriteLine("double: " + doubleValue);
+        Console.WriteLine("decimal: " + decimalValue);
+        Console.WriteLine("char: " + charValue);
+        Console.WriteLine("bool: " + boolValue);
+        }
+    }
+----------------------------------------------------------------------------------
+//Ejercicio2
+using System;
+public class Millas
+    {
+    public void Main() 
+        {
+        //digo cuantos metros quiero convertir
+            int metros = 3000;
+        //Constante de conversión Millass/Metros
+            const double MetrosporMilla = 1609;
+            
+            double millas = metros / MetrosporMilla;
+        //Salida
+            Console.WriteLine(metros + "metros son " + millas + "millas.");
+        }
+    }
+----------------------------------------------------------------------------------
+//Ejercicio3
+using System;
+public class Operaciones
+    {
+    public void Main() 
+        {
+        
+        //declaro variables
+        int intValue1 = 2;
+        int intValue2 = 12;
+        int intValue3 = 60;
+        
+        //Operaciones
+        int suma = intValue1 + intValue2 + intValue3;
+        int resta = intValue3 - intValue2 - intValue1;
+        int multiplicacion = intValue1*intValue2*intValue3;
+        int division = intValue3/intValue2/intValue1;
+        
+        }
+    }
+----------------------------------------------------------------------------------
