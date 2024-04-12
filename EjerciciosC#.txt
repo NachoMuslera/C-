@@ -1,3 +1,5 @@
+Tipo de datos y casting de tipos
+
 //Ejercicio1
 using System;
 public class Programa 
@@ -64,3 +66,149 @@ public class Operaciones
         }
     }
 ----------------------------------------------------------------------------------
+//Ejercicio 4
+
+class Cast
+{
+    static void Main()
+    {
+        //apartado1
+        int x = 3;
+        char a;
+       
+        a = (char)x;
+        System.Console.WriteLine(a);
+        
+       //apartado2
+       double Valor2 = 1234.5;
+       int b;
+
+        b= (int)Valor2;
+        System.Console.WriteLine(b);
+        
+        //apartado3
+        int Valor3 = 546463213;
+        long c;
+        
+        c = (long)Valor3;
+        System.Console.WriteLine(c);
+        
+        //apartado4
+        int Valor4 = 4;
+        short d;
+        
+        d = (short)Valor4;
+        System.Console.WriteLine(d);
+        
+        //apartado5
+        short Valor5 = 5;
+        int e;
+        
+        e = (int)Valor5;
+        System.Console.WriteLine(e);
+        
+        //apartado6
+        byte Valor6= 6;
+        long f;
+        
+        f = (long)Valor6;
+        System.Console.WriteLine(f);
+    }
+}
+----------------------------------------------------------------------------------
+//Ejercicio 5
+
+using System;
+
+class IS
+{
+    static void Main()
+    {
+        int dato1 = 2;
+        String dato2 = "hello";
+        float dato3 = 2.3f;
+        
+        Console.WriteLine("dato1 es valueType o int: " + (dato1 is ValueType || dato1 is int));
+        Console.WriteLine("dato2 es float o long: " + (dato2 is float || dato2 is long));
+        Console.WriteLine("dato3 es double u object: " + (dato3 is double || dato3 is object));
+    }
+}
+----------------------------------------------------------------------------------
+Estructuras de control
+
+//Ejercicio1
+
+using System;
+
+class Variables
+{
+    static void Main()
+    {
+        int a = 10;
+        int b = 20;
+        
+        if (a - b  > 0){
+            Console.WriteLine ("A es mayor que B");
+            }
+        
+        if (a - b < 0){
+            Console.WriteLine ("B es mayor que A");
+            }
+        
+        if (a%2 == 0){
+            Console.WriteLine ("A es par");
+            }
+        if (a%2 != 0) {
+            Console.WriteLine ("A es primo");
+            }
+        
+        if (b%2 == 0){
+            Console.WriteLine ("B es par");
+            }
+        if (b%2 != 0) {
+            Console.WriteLine ("B es primo");
+            }
+        
+       if (b%a == 0){
+           Console.WriteLine ("Son divisibles entre ellos");
+           }
+       if (b%a != 0){
+           Console.WriteLine ("No son divisibles entre ellos");
+           }
+    }
+}
+----------------------------------------------------------------------------------
+//Ejercicio 2
+
+using System;
+
+class DíasSemana{
+    static void Main(String[] args){
+       
+        Console.WriteLine("Dime un día de la semana:");
+        String dia = Console.ReadLine();
+        
+        dia = dia.ToLower();
+        
+        if (dia =="sabado" || dia =="domingo"){
+            Console.WriteLine("Es fin de semana");
+            }else{
+            Console.WriteLine("No es fin de semana");
+            }
+    }
+}
+----------------------------------------------------------------------------------
+//Ejercicio 3
+
+using System;
+
+class ValorAbsoluto {
+    static void Main(String[] args){
+    
+        Console.WriteLine("Ingresa un número: ");
+        double numero = Convert.ToDouble(Console.ReadLine());
+        double ValorAbsoluto = numero >= 0 ? numero : -numero;
+        Console.WriteLine(numero);
+      
+    }
+}
