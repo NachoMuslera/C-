@@ -212,3 +212,30 @@ class ValorAbsoluto {
       
     }
 }
+----------------------------------------------------------------------------------
+//Ejercicio 5
+using System;
+public class C {
+    public void Main() {
+        Console.WriteLine("Ingrese una letra: ");
+        char letra = Convert.ToChar(Console.ReadLine());
+        
+        if (Char.IsLetter(letra)){
+            if(EsVocal(letra)){
+                Console.WriteLine("Es vocal");
+                }else{
+                Console.WriteLine("Es consonante");
+                }
+            }
+                else if (Char.IsDigit(letra)){
+                Console.WriteLine("Es una cifra numérica");
+                }else{
+                    Console.WriteLine("No es ni cifra numérica, ni vocal, ni consonante");
+                }
+            }     
+                static bool EsVocal(char letra){
+                    Char[]vocales = {'a','e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+                    return Array.IndexOf(vocales, letra) != -1;
+                }
+             }
+          
